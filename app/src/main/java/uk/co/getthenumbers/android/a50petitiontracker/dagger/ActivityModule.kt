@@ -1,8 +1,8 @@
-package uk.org.rivernile.android.a50petitiontracker.dagger
+package uk.co.getthenumbers.android.a50petitiontracker.dagger
 
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
-import uk.org.rivernile.android.a50petitiontracker.ui.MainActivity
+import uk.co.getthenumbers.android.a50petitiontracker.ui.MainActivity
 
 @Module
 abstract class ActivityModule {

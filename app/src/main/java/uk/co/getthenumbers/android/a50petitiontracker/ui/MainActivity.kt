@@ -1,4 +1,4 @@
-package uk.org.rivernile.android.a50petitiontracker.ui
+package uk.co.getthenumbers.android.a50petitiontracker.ui
 
 import android.content.ActivityNotFoundException
 import android.content.Intent
@@ -13,7 +13,7 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.ViewModelProviders
 import dagger.android.AndroidInjection
-import uk.org.rivernile.android.a50petitiontracker.R
+import uk.co.getthenumbers.android.a50petitiontracker.R
 import java.text.NumberFormat
 import javax.inject.Inject
 

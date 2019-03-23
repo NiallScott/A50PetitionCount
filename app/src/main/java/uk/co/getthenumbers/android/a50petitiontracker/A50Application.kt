@@ -1,10 +1,10 @@
-package uk.org.rivernile.android.a50petitiontracker
+package uk.co.getthenumbers.android.a50petitiontracker
 
 import android.app.Activity
 import android.app.Application
 import dagger.android.DispatchingAndroidInjector
 import dagger.android.HasActivityInjector
-import uk.org.rivernile.android.a50petitiontracker.dagger.DaggerApplicationComponent
+import uk.co.getthenumbers.android.a50petitiontracker.dagger.DaggerApplicationComponent
 import javax.inject.Inject
 
 class A50Application : Application(), HasActivityInjector {

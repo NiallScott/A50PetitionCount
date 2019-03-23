@@ -1,11 +1,11 @@
-package uk.org.rivernile.android.a50petitiontracker.dagger.main
+package uk.co.getthenumbers.android.a50petitiontracker.dagger.main
 
 import dagger.Module
 import dagger.Provides
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
-import uk.org.rivernile.android.a50petitiontracker.repositories.petition.PetitionService
+import uk.co.getthenumbers.android.a50petitiontracker.petition.PetitionService
 import java.util.concurrent.TimeUnit
 import javax.inject.Singleton
 

@@ -1,4 +1,4 @@
-package uk.org.rivernile.android.a50petitiontracker.dagger
+package uk.co.getthenumbers.android.a50petitiontracker.dagger
 
 import androidx.lifecycle.ViewModel
 import dagger.MapKey

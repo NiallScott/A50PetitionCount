@@ -1,8 +1,8 @@
-package uk.org.rivernile.android.a50petitiontracker.ui
+package uk.co.getthenumbers.android.a50petitiontracker.ui
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
-import uk.org.rivernile.android.a50petitiontracker.repositories.petition.PetitionRepository
+import uk.co.getthenumbers.android.a50petitiontracker.petition.PetitionRepository
 import javax.inject.Inject
 
 class MainActivityViewModel @Inject constructor(petitionRepository: PetitionRepository) : ViewModel() {

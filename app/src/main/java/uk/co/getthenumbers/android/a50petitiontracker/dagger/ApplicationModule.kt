@@ -1,10 +1,10 @@
-package uk.org.rivernile.android.a50petitiontracker.dagger
+package uk.co.getthenumbers.android.a50petitiontracker.dagger
 
 import android.app.Application
 import android.content.Context
 import dagger.Module
 import dagger.Provides
-import uk.org.rivernile.android.a50petitiontracker.dagger.main.PetitionRepositoryModule
+import uk.co.getthenumbers.android.a50petitiontracker.dagger.main.PetitionRepositoryModule
 
 @Module(includes = [
     ViewModelModule::class,

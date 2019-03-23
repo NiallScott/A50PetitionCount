@@ -2,7 +2,7 @@
 <manifest
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="uk.org.rivernile.android.a50petitiontracker">
+    package="uk.co.getthenumbers.android.a50petitiontracker">
 
     <uses-permission android:name="android.permission.INTERNET" />
 

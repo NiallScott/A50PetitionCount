@@ -1,4 +1,4 @@
-package uk.org.rivernile.android.a50petitiontracker.repositories.petition
+package uk.co.getthenumbers.android.a50petitiontracker.petition
 
 import android.os.Handler
 import android.os.Message
@@ -30,6 +30,7 @@ class PetitionLiveData(private val petitionService: PetitionService) : LiveData<
     }
 
     fun stop() {
+        isStarted = false
         handler.removeCallbacksAndMessages(null)
     }
 

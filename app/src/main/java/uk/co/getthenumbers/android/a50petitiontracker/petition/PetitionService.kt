@@ -1,4 +1,4 @@
-package uk.org.rivernile.android.a50petitiontracker.repositories.petition
+package uk.co.getthenumbers.android.a50petitiontracker.petition
 
 import retrofit2.Call
 import retrofit2.http.GET

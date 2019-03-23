@@ -1,10 +1,10 @@
-package uk.org.rivernile.android.a50petitiontracker.dagger
+package uk.co.getthenumbers.android.a50petitiontracker.dagger
 
 import android.app.Application
 import dagger.BindsInstance
 import dagger.Component
 import dagger.android.AndroidInjectionModule
-import uk.org.rivernile.android.a50petitiontracker.A50Application
+import uk.co.getthenumbers.android.a50petitiontracker.A50Application
 import javax.inject.Singleton
 
 @Singleton
