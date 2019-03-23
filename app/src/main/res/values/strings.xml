@@ -4,7 +4,9 @@
 
     <!-- MainActivity -->
     <string name="main_activity_title">Petition: Revoke Article 50 and remain in the EU.</string>
+    <string name="main_activity_sign_petition">Sign petition</string>
     <string name="main_activity_share_petition">Share petition</string>
     <string name="main_activity_share_dialog_title">Share with…</string>
+    <string name="main_activity_petition_url">https://petition.parliament.uk/petitions/241584</string>
     <string name="main_activity_share_text">Please sign the petition to revoke Article 50. https://petition.parliament.uk/petitions/241584</string>
 </resources>

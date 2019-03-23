@@ -1,12 +1,14 @@
 package uk.org.rivernile.android.a50petitiontracker.ui
 
+import android.content.ActivityNotFoundException
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.ProgressBar
 import android.widget.TextView
-import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.ViewModelProviders
@@ -33,11 +35,16 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         txtCount = findViewById(R.id.txtCount)
         progress = findViewById(R.id.progress)
+        val btnSign = findViewById<Button>(R.id.btnSign)
         val btnShare = findViewById<Button>(R.id.btnShare)
 
         val viewModel = ViewModelProviders.of(this, viewModelFactory)
             .get(MainActivityViewModel::class.java)
         viewModel.getCount().observe(this, Observer(this::populateCount))
+
+        btnSign.setOnClickListener {
+            doSign()
+        }
 
         btnShare.setOnClickListener {
             doShare()
@@ -52,8 +59,21 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    private fun doSign() {
+        val petitionUrl = Uri.parse(getString(R.string.main_activity_petition_url))
+        Intent(Intent.ACTION_VIEW)
+                .setData(petitionUrl)
+                .also {
+                    try {
+                        startActivity(it)
+                    } catch (ignored: ActivityNotFoundException) {
+
+                    }
+                }
+    }
+
     private fun doShare() {
-        Intent().setAction(Intent.ACTION_SEND)
+        Intent(Intent.ACTION_SEND)
                 .putExtra(Intent.EXTRA_TEXT, getString(R.string.main_activity_share_text))
                 .setType("text/plain")
                 .also {
