@@ -55,7 +55,7 @@ class PetitionLiveData(private val petitionService: PetitionService) : LiveData<
 
     private fun scheduleNextRefresh() {
         if (isStarted) {
-            handler.sendEmptyMessageDelayed(REFRESH, 15000)
+            handler.sendEmptyMessageDelayed(REFRESH, 60000)
         }
     }
 }
